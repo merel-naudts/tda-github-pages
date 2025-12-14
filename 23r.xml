@@ -32,8 +32,7 @@
   <text>
       <body>
          <div type="page" n="23r" rend="recto">
-            <pb facs="#p23r"/>
-                   
+            <pb n="23r"/> 
             <metamark function="pagenumber"><num><hi rend="circled">79</hi></num></metamark>
             <p>
                my view. I did not dare <del type="crossedOut" hand="#MWS" rend="blackink">to</del> return<lb/>
@@ -71,7 +70,6 @@
                As <del type="crossedOut" hand="#MWS" rend="blackink">I</del><add place="supralinear" hand="#MWS" rend="blackink">it</add> drew nearer I observed that it<lb/>
                was the Swiss diligence; it stopped<lb/>
                just where I was standing, and on<lb/>
-               
             </p>
          </div>
       </body>

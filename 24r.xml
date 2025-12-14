@@ -32,8 +32,8 @@
   <text>
       <body>
          <div type="page" n="24r" rend="recto">
-            <pb facs="#p24r"/>
-               <metamark function="pagenumber"><num><hi rend="circled">81</hi></num></metamark>
+            <pb n="24r"/>
+            <metamark function="pagenumber"><num><hi rend="circled">81</hi></num></metamark>
             <p>
                "and Indeed I believe I left him<lb/>
                "incredulous to the last for his con<lb/>
@@ -52,6 +52,8 @@
             <p>
                "And my father, brothers &amp; Eliza<lb/>
                beth" said I<lb/>
+            </p>
+            <p>
                "Very well &amp; very happy" replied<lb/>
                he "only a little uneasy that <del type="crossedOut" hand="#MWS" rend="blackink">yo</del><lb/>
                "they hear from you so seldom, &amp;<lb/>
@@ -63,6 +65,8 @@
                "remark how very ill you are. So thin<lb/>
                "and pale; you appear as if you had<lb/>
                "been watching for several nights."<lb/>
+            </p>
+            <p>
                "You have guessed right" I replied<lb/>
                "I have lately been so engaged in<lb/>
                "several<add place="supralinear" hand="#PBS" rend="blackink"><del type="crossedOut" hand="#PBS" rend="blackink">studious</del> one</add> occupations that I did<lb/>
