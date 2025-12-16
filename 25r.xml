@@ -37,10 +37,7 @@
             <p>
                believe that so great a good fortune<lb/>
                could have befallen me; but when<lb/>
-               I
-                   <del type="crossedOut" hand="#PBS" rend="black ink">was</del>
-                   <add hand="#PBS" place="supralinear">became</add>
-                   assured that my enemy had<lb/>
+               I <del type="crossedOut" hand="#PBS" rend="black ink">was</del><add place="supralinear" hand="#PBS" rend="black ink">became</add> assured that my enemy had<lb/>
                indeed fled, I clapped my hands for<lb/>
                joy and ran down to Henry.<lb/>
             </p>
@@ -54,16 +51,11 @@
                pulse beat rapidly. I was unable to<lb/>
                remain for a single instant in<lb/>
                the same place — I jumped over<lb/>
-               the chairs, clapped my hand<add hand="#MWS" place="intralinear">s</add> &amp; laughed<lb/>
+               the chairs, clapped my hand<add place="inline" hand="#MWS" rend="black ink">s</add> &amp; laughed<lb/>
                aloud. Clerval at first attributed<lb/>
-               my unusual spirits to joy
-                  <del type="crossedOut" hand="#MWS" rend="black ink">at</del>
-                  <add hand="#MWS" place="supralinear">on</add>
-                  his<lb/>
+               my unusual spirits to joy <del type="crossedOut" hand="#MWS" rend="black ink">at</del><add place="supralinear" hand="#MWS" rend="black ink">on</add> his<lb/>
                arrival– but when <del type="crossedOut" hand="#MWS" rend="black ink">saw</del> he observed<lb/>
-               me <add hand="#PBS" place="inline" rend="black ink"><metamark>^</metamark></add>
-                     <add hand="#PBS" place="supralinear">more attentively</add>
-                     he saw a wildness in my eyes for<lb/>
+               me <add place="supralinear" hand="#PBS" rend="black ink">more attentively</add><metamark>&#8248;</metamark><note>'^' is used as metamark</note> he saw a wildness in my eyes for<lb/>
                which he could not account and<lb/>
                my loud unrestrained heartless laugh<lb/>
                -ter frightened and astonished him.<lb/>
