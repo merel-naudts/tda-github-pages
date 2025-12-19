@@ -51,7 +51,11 @@
 
   <!-- processes the marginal additions again to give them a class to hide them in the 'main' text in css. By hiding them using css, they can also be made visible again when showing a reading text, for example-->
     <xsl:template match="tei:add[@place = 'marginleft']">
-        <span class="marginAdd">
+        <span>
+            <xsl:attribute name="class">
+                <xsl:text>marginAdd </xsl:text>
+                <xsl:value-of select="@hand"/>
+            </xsl:attribute>
             <xsl:apply-templates/>
         </span>
     </xsl:template>
@@ -60,6 +64,7 @@
     <xsl:template match="tei:del">
         <del>
             <xsl:attribute name="class">
+                <xsl:text>deletions </xsl:text>
                 <xsl:value-of select="@hand"/>
             </xsl:attribute>
             <xsl:apply-templates/>
@@ -68,8 +73,12 @@
     
     <!-- all the supralinear additions are given in a span with the class supraAdd, make sure to put this class in superscript in the CSS file, -->
     <xsl:template match="tei:add[@place = 'supralinear']">
-        <span class="supraAdd">
-            <i><xsl:apply-templates/></i>
+        <span>
+            <xsl:attribute name="class">
+                <xsl:text>supraAdd </xsl:text>
+                <xsl:value-of select="@hand"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
         </span>
     </xsl:template>
     
@@ -77,7 +86,12 @@
     <!-- add additional templates below, for example to transform the tei:lb in <br/> empty elements, tei:hi[@rend = 'sup'] in <sup> elements, the underlined text, additions with the attribute "overwritten" etc. -->
 
     <xsl:template match="tei:add">
-        <i><xsl:apply-templates/></i>
+        <span>
+            <xsl:attribute name="class">
+                <xsl:value-of select="@hand"/>
+            </xsl:attribute>
+            <i><xsl:apply-templates/></i>
+        </span>
     </xsl:template>
 
     <xsl:template match="tei:lb">
@@ -95,6 +109,19 @@
             <xsl:apply-templates/>
         </u>
     </xsl:template>
+
+    <xsl:template match="tei:note"/>
     
-    
+    <xsl:template match="tei:metamark[@function='pagenumber']">  
+        <span class="metamark">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+    <xsl:template match="tei:metamark[@function='pagenumber']/tei:num">
+        <span class="pagenum">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
 </xsl:stylesheet>

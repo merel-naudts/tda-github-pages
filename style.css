@@ -33,7 +33,24 @@ p {
 }
 
 .supraAdd {
-    vertical-align: 80%;
+    vertical-align: 85%;
     font-size: smaller;
-    color: darkgray;
+    font-style: italic;
+}
+
+.deletions {
+    color: rgb(147, 147, 147);
+}
+
+.metamark {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.pagenum {
+    padding: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 50%;
 }
