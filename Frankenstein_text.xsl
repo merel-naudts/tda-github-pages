@@ -69,12 +69,32 @@
     <!-- all the supralinear additions are given in a span with the class supraAdd, make sure to put this class in superscript in the CSS file, -->
     <xsl:template match="tei:add[@place = 'supralinear']">
         <span class="supraAdd">
-            <xsl:apply-templates/>
+            <i><xsl:apply-templates/></i>
         </span>
     </xsl:template>
     
     
     <!-- add additional templates below, for example to transform the tei:lb in <br/> empty elements, tei:hi[@rend = 'sup'] in <sup> elements, the underlined text, additions with the attribute "overwritten" etc. -->
 
+    <xsl:template match="tei:add">
+        <i><xsl:apply-templates/></i>
+    </xsl:template>
+
+    <xsl:template match="tei:lb">
+        <br/>
+    </xsl:template>
+
+    <xsl:template match="tei:hi[@rend='sup']">
+        <sup>
+            <xsl:apply-templates/>
+        </sup>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[@rend='u']">
+        <u>
+            <xsl:apply-templates/>
+        </u>
+    </xsl:template>
+    
     
 </xsl:stylesheet>

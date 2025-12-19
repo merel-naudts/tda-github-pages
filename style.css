@@ -32,4 +32,8 @@ p {
     display: none !important;
 }
 
-
+.supraAdd {
+    vertical-align: 80%;
+    font-size: smaller;
+    color: darkgray;
+}
