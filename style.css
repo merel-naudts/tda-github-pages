@@ -83,12 +83,22 @@ p {
     font-size: 18px;
     margin-top: 0.1em;
     font-family: "Vollkorn", serif;
+    margin-bottom: 0;
+}
+
+.header-edition {
+    color: #f3f0e8;
+    font-size: 18px;
+    font-family: "Vollkorn", serif;
+    margin-top: 5px;
+    font-style: italic;
 }
 
 .navbar {
-    width: 15%;
+    width: 250px;
     margin-top: 2%;
-    margin-left: 80%;
+    margin-left: 75%;
+    
 }
 
 .navbar-light .navbar-nav .nav-link,
@@ -103,4 +113,33 @@ p {
 .dropdown-item {
     font-family: "Vollkorn", serif;
     color: #362715;
+}
+
+.desc {
+    width: 100%;
+    height: auto;
+    background-color: #f3f0e8;
+}
+
+.desc-header {
+    font-family: "Vollkorn", serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #362715;
+    margin: 3% 20% 2% 22%;
+}
+
+.desc-text {
+    font-size: 18px;
+    font-family: "Vollkorn", serif;
+    text-align: justify;
+    color: #362715;
+}
+
+.p1 {
+    margin: 5% 20% 0% 20%;
+}
+
+.p2 {
+    margin: 0% 20% 5% 20%;
 }
