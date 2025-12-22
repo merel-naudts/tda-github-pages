@@ -11,9 +11,19 @@
     <xsl:template match="tei:TEI">
         <div class="row">
             <div class="col">
-                <h4>About the manuscript page:</h4>
-                <xsl:value-of select="//tei:sourceDesc"/>
-                <xsl:value-of select="//tei:licence"/> <!-- You can change the way the metadata is visualised as well-->
+                <h2 class="manuscript-header">About the manuscript page</h2>
+                <ul class="list">
+                    <li><strong>Title: </strong><xsl:value-of select="//tei:title"/></li>
+                    <li><strong>Author: </strong><xsl:value-of select="//tei:author"/></li>
+                    <li><strong>Editor: </strong><xsl:value-of select="//tei:editor"/></li>
+                    <li><strong>Date written: </strong><xsl:value-of select="//tei:origDate"/></li>
+                    <li><strong>Licence: </strong><xsl:value-of select="//tei:licence"/></li>
+                    <li><strong>Institution: </strong><xsl:value-of select="//tei:institution"/></li>
+                    <li><strong>Repository: </strong><xsl:value-of select="//tei:repository"/></li>
+                    <li><strong>Shelfmark: </strong><xsl:value-of select="//tei:idno"/></li>
+                    <li><strong>Hands: </strong></li>
+                    <li><strong>Folio: </strong><xsl:value-of select="//tei:locus"/></li>
+                </ul>
             </div>
             <div class="col">
             <ul> 

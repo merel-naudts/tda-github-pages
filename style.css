@@ -295,3 +295,17 @@ footer p {
     font-family: "Vollkorn", serif;
     padding: 25px 0 25px 0
 }
+
+.manuscript-header {
+    font-family: "Vollkorn", serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #362715;
+    margin: 3% 0 2% 0;
+}
+
+.list {
+    font-size: 16px;
+    font-family: "Vollkorn", serif;
+    color: #362715;
+}
