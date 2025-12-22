@@ -91,11 +91,19 @@ header {
     font-style: italic;
 }
 
+.header-page {
+    color: #f3f0e8;
+    font-size: 50px;
+    margin: 0;
+    font-family: "Vollkorn", serif;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
 .navbar {
     width: 250px;
     margin-top: 2%;
     margin-left: 75%;
-    
 }
 
 .navbar-light .navbar-nav .nav-link,

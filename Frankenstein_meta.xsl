@@ -9,24 +9,24 @@
 
     
     <xsl:template match="tei:TEI">
-                     <div class="row">
-                         <div class="col">
-                             <h4>About the manuscript page:</h4>
-                             <xsl:value-of select="//tei:sourceDesc"/>
-                             <xsl:value-of select="//tei:licence"/> <!-- You can change the way the metadata is visualised as well-->
-                         </div>
-                         <div class="col">
-                            <ul> 
-                                <li>Total number of modifications: 
-                                    <xsl:value-of select="count(//tei:del|//tei:add)" /> <!-- Counts all the add and del elements, and puts it in a list item -->
-                                </li>
-                                <li>Number of additions: 
-                                    <!-- count the additions only -->
-                                </li>
-                                <!-- add other list items in which you count things, such as the modifications made by Percy -->
-                            </ul>
-                        </div>
-                     </div>
+        <div class="row">
+            <div class="col">
+                <h4>About the manuscript page:</h4>
+                <xsl:value-of select="//tei:sourceDesc"/>
+                <xsl:value-of select="//tei:licence"/> <!-- You can change the way the metadata is visualised as well-->
+            </div>
+            <div class="col">
+            <ul> 
+                <li>Total number of modifications: 
+                    <xsl:value-of select="count(//tei:del|//tei:add)" /> <!-- Counts all the add and del elements, and puts it in a list item -->
+                </li>
+                <li>Number of additions: 
+                    <!-- count the additions only -->
+                </li>
+                <!-- add other list items in which you count things, such as the modifications made by Percy -->
+            </ul>
+        </div>
+        </div>
         <hr/>
     </xsl:template>
     
