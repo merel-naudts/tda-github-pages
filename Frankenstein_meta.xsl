@@ -13,7 +13,7 @@
             <div class="col">
                 <h2 class="manuscript-header">About the manuscript page</h2>
                 <ul class="list">
-                    <li><strong>Title: </strong><xsl:value-of select="//tei:title"/></li>
+                    <li><strong>Title: </strong><i><xsl:value-of select="//tei:title"/></i></li>
                     <li><strong>Author: </strong><xsl:value-of select="//tei:author"/></li>
                     <li><strong>Editor: </strong><xsl:value-of select="//tei:editor"/></li>
                     <li><strong>Date written: </strong><xsl:value-of select="//tei:origDate"/></li>
@@ -26,16 +26,16 @@
                 </ul>
             </div>
             <div class="col">
-            <ul> 
-                <li>Total number of modifications: 
-                    <xsl:value-of select="count(//tei:del|//tei:add)" /> <!-- Counts all the add and del elements, and puts it in a list item -->
-                </li>
-                <li>Number of additions: 
-                    <!-- count the additions only -->
-                </li>
-                <!-- add other list items in which you count things, such as the modifications made by Percy -->
-            </ul>
-        </div>
+                <ul> 
+                    <li>Total number of modifications: 
+                        <xsl:value-of select="count(//tei:del|//tei:add)" /> <!-- Counts all the add and del elements, and puts it in a list item -->
+                    </li>
+                    <li>Number of additions: 
+                        <!-- count the additions only -->
+                    </li>
+                    <!-- add other list items in which you count things, such as the modifications made by Percy -->
+                </ul>
+            </div>
         </div>
         <hr/>
     </xsl:template>

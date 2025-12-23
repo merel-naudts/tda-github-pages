@@ -12,17 +12,26 @@ img {
 }
 
 p {
-    text-indent: 10px;
+    text-indent: 25px;
 }
 
-.row {
-    width: 100%;
-    margin-left: 0;
+.custom-container {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
-.col {
-  margin-left: 10px;
-  margin-right: 10px;
+.transcription {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-right: 0;
+    margin-left: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 100px;
+}
+
+.mirador {
+    margin-bottom: 100px;
 }
 
 .marginAdd {
@@ -244,7 +253,7 @@ header {
     opacity: 0.85;
 }
 
-.container {
+.container-pages {
     display: grid;
     grid-template-columns: repeat(5, auto);
     margin: 0% 10% 5% 10%;

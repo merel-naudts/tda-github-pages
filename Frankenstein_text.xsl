@@ -34,7 +34,7 @@
             </xsl:for-each> 
         </div>
         <div class="col-9">
-            <div class="transcription">
+            <div>
                 <xsl:apply-templates select="//tei:div"/>
             </div>
         </div>
