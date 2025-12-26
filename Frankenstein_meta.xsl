@@ -11,7 +11,7 @@
     <xsl:template match="tei:TEI">
         <div class="row">
             <div class="col">
-                <h2 class="manuscript-header">About the manuscript page</h2>
+                <h2 class="page-header">About the manuscript page</h2>
                 <ul class="list">
                     <li><strong>Title: </strong><i><xsl:value-of select="//tei:title"/></i></li>
                     <li><strong>Author: </strong><xsl:value-of select="//tei:author"/> (#<xsl:value-of select="//tei:author/@xml:id"/>)</li>
@@ -25,34 +25,33 @@
                 </ul>
             </div>
             <div class="col">
-                <ul class="list"> 
-                    <table>
-                        <tr>
-                            <th></th>
-                            <th>#MWS</th>
-                            <th>#PBS</th>
-                            <th>Total</th>
-                        </tr>
-                        <tr>
-                            <th>Number of modifications</th>
-                            <td><xsl:value-of select="count(//tei:del[@hand='#MWS']|//tei:add[@hand='#MWS'])" /></td>
-                            <td><xsl:value-of select="count(//tei:del[@hand='#PBS']|//tei:add[@hand='#PBS'])" /></td>
-                            <td><strong><xsl:value-of select="count(//tei:del|//tei:add)" /></strong></td>
-                        </tr>
-                        <tr>
-                            <th>Number of additions</th>
-                            <td><xsl:value-of select="count(//tei:add[@hand='#MWS'])" /></td>
-                            <td><xsl:value-of select="count(//tei:add[@hand='#PBS'])" /></td>
-                            <td><strong><xsl:value-of select="count(//tei:add)" /></strong></td>
-                        </tr>
-                        <tr>
-                            <th>Number of deletions</th>
-                            <td><xsl:value-of select="count(//tei:del[@hand='#MWS'])" /></td>
-                            <td><xsl:value-of select="count(//tei:del[@hand='#PBS'])" /></td>
-                            <td><strong><xsl:value-of select="count(//tei:del)" /></strong></td>
-                        </tr>
-                    </table>
-                </ul>
+                <h2 class="page-header">Statistics</h2>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>#MWS</th>
+                        <th>#PBS</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <th>Number of modifications</th>
+                        <td><xsl:value-of select="count(//tei:del[@hand='#MWS']|//tei:add[@hand='#MWS'])" /></td>
+                        <td><xsl:value-of select="count(//tei:del[@hand='#PBS']|//tei:add[@hand='#PBS'])" /></td>
+                        <td><strong><xsl:value-of select="count(//tei:del|//tei:add)" /></strong></td>
+                    </tr>
+                    <tr>
+                        <th>Number of additions</th>
+                        <td><xsl:value-of select="count(//tei:add[@hand='#MWS'])" /></td>
+                        <td><xsl:value-of select="count(//tei:add[@hand='#PBS'])" /></td>
+                        <td><strong><xsl:value-of select="count(//tei:add)" /></strong></td>
+                    </tr>
+                    <tr>
+                        <th>Number of deletions</th>
+                        <td><xsl:value-of select="count(//tei:del[@hand='#MWS'])" /></td>
+                        <td><xsl:value-of select="count(//tei:del[@hand='#PBS'])" /></td>
+                        <td><strong><xsl:value-of select="count(//tei:del)" /></strong></td>
+                    </tr>
+                </table>
             </div>
         </div>
         <hr/>

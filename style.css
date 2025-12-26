@@ -305,7 +305,7 @@ footer p {
     padding: 25px 0 25px 0
 }
 
-.manuscript-header {
+.page-header {
     font-family: "Vollkorn", serif;
     font-size: 24px;
     font-weight: bold;
@@ -323,6 +323,9 @@ table, th, td {
     border: solid;
     border-width: 1px;
     border-color: #c9c4b4;
+    font-size: 16px;
+    font-family: "Vollkorn", serif;
+    color: #362715;
 }
 
 th {
