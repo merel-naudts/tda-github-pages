@@ -37,6 +37,7 @@ var mirador = Mirador.viewer({
     {
       loadedManifest: "https://iiif.bodleian.ox.ac.uk/iiif/manifest/53fd0f29-d482-46e1-aa9d-37829b49987d.json",
       canvasIndex: number,
+      view: "single",
       thumbnailNavigationPosition: 'off'
     }
   ]
@@ -98,20 +99,35 @@ function documentLoader() {
   statsLoader();
   // Event listener for sel1 change
   function selectHand(event) {
-  var visible_mary = document.getElementsByClassName('#MWS');
-  var visible_percy = document.getElementsByClassName('#PBS');
-  // Convert the HTMLCollection to an array for forEach compatibility
-  var MaryArray = Array.from(visible_mary);
-  var PercyArray = Array.from(visible_percy);
+    var visible_mary = document.getElementsByClassName('#MWS');
+    var visible_percy = document.getElementsByClassName('#PBS');
+    // Convert the HTMLCollection to an array for forEach compatibility
+    var MaryArray = Array.from(visible_mary);
+    var PercyArray = Array.from(visible_percy);
     if (event.target.value == 'both') {
     //write an forEach() method that shows all the text written and modified by both hand (in black?). The forEach() method of Array instances executes a provided function once for each array element.
-     
+      MaryArray.forEach((item) => {
+        item.style.color = 'black';
+      });
+      PercyArray.forEach((item) => {
+        item.style.color = 'black';
+      });
     } else if (event.target.value == 'Mary') {
-     //write an forEach() method that shows all the text written and modified by Mary in a different color (or highlight it) and the text by Percy in black. 
-     
+    //write an forEach() method that shows all the text written and modified by Mary in a different color (or highlight it) and the text by Percy in black. 
+      MaryArray.forEach((item) => {
+        item.style.color = 'brown';
+      });
+      PercyArray.forEach((item) => {
+        item.style.color = 'black';
+      });
     } else {
-     //write an forEach() method that shows all the text written and modified by Percy in a different color (or highlight it) and the text by Mary in black.
-    
+    //write an forEach() method that shows all the text written and modified by Percy in a different color (or highlight it) and the text by Mary in black.
+      MaryArray.forEach((item) => {
+        item.style.color = 'black';
+      });
+      PercyArray.forEach((item) => {
+        item.style.color = 'brown';
+      });
     }
   }
 // write another function that will toggle the display of the deletions by clicking on a button
