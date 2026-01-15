@@ -35,10 +35,10 @@
         <metamark function="pagenumber"><num><hi rend="circled">77</hi></num></metamark>
         <p>
           to change and I thought that I held <lb/>
-          the corpse of my dead mother in my arms <del type="overwritten" hand="#MWS" rend="black ink">,</del><add place="overwritten" hand="#MWS" rend="black ink">:</add><lb/>
+          the corpse of my dead mother in my arms <del type="overwritten" hand="#PBS" rend="black ink">,</del><add place="overwritten" hand="#PBS" rend="black ink">:</add><lb/>
           <del type="overwritten" hand="#MWS" rend="black ink">a</del><add place="overwritten" hand="#MWS" rend="black ink">A</add> shroud envolepped her form &amp; I saw<lb/>
           the grave worms crawling in the folds of<lb/>
-          the flannel; I started <add place="supralinear" hand="#MWS" rend="black ink">from my sleep</add><metamark>&#8248;</metamark><note>'^' is used as metamark, close visual resemblance</note> with horror, a<lb/>
+          the flannel; I started <add place="supralinear" hand="#MWS" rend="black ink">from my sleep</add><metamark>&#8248;</metamark><note>'^' is used as metamark to indicate where 'from my sleep' should be inserted</note> with horror, a<lb/>
           <del type="crossedOut" hand="#MWS" rend="black ink">when I saw</del> cold dew covered my forehead<lb/>
           my teeth <del type="crossedOut" hand="#MWS" rend="black ink">ah</del> chattered and every limb<lb/>
           <del type="crossedOut" hand="#MWS" rend="black ink">was</del><add place="supralinear" hand="#MWS" rend="black ink">became</add> convul<del type="overwritten" hand="#MWS" rend="black ink"><unclear>x</unclear></del><add place="overwritten" hand="#MWS" rend="black ink">s</add>ed, when, by the dim and<lb/>
@@ -53,7 +53,7 @@
           might have spoken but I did not<lb/>
           hear — one <del type="crossedOut" hand="#MWS" rend="black ink">had</del> hand was stretched out<lb/>
           to detain me but I escaped and <del type="crossedOut" hand="#PBS" rend="black ink">ran</del><lb/>
-          rushed down <del type="crossedOut" hand="#PBS" rend="black ink"><add place="supralinear" hand="#PBS" rend="black ink">the</add></del> stair<del type="overwritten" hand="#PBS" rend="black ink">s</del><add place="overwritten" hand="#PBS" rend="black ink">s</add> <del type="crossedOut" hand="#PBS" rend="black ink"><add place="infralinear" hand="#PBS" rend="black ink">case</add></del> I took refuge in<lb/>
+          rushed down <del type="crossedOut" hand="#PBS" rend="black ink"><add place="supralinear" hand="#PBS" rend="black ink">the</add></del> stair<del type="overwritten" hand="#PBS" rend="black ink">s</del><del type="crossedOut" hand="#PBS" rend="black ink"><add place="infralinear" hand="#PBS" rend="black ink">case</add></del><add place="overwritten" hand="#PBS" rend="black ink">s</add> I took refuge in<lb/>
           a court-yard belonging to the house<lb/>
           which I inhabited; where I remained<lb/>
           <add place="marginleft" hand="#PBS" rend="black ink">during</add>the rest of the night walking up and<lb/>
@@ -66,7 +66,7 @@
         <p>  
           Oh! no mortal could support <lb/>
           the horror of that countenance. A<lb/>
-          mummy <add place="supralinear" hand="#MWS" rend="black ink">again</add><metamark>&#8257;</metamark><note>'⁁' is used as metamark</note> endued with <del type="crossedOut" hand="#MWS" rend="black ink">life</del><add place="supralinear" hand="#MWS" rend="black ink">animation</add> could not be<lb/>
+          mummy <add place="supralinear" hand="#MWS" rend="black ink">again</add><metamark>&#8248;</metamark><note>'^' is used as metamark to indicate where 'again' should be inserted</note> endued with <del type="crossedOut" hand="#MWS" rend="black ink">life</del><add place="supralinear" hand="#MWS" rend="black ink">animation</add> could not be<lb/>
         </p>
       </div>
     </body>
