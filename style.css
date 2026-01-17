@@ -38,7 +38,7 @@ p {
     display: none !important;
 }
 
-/* Frankenstein_text.xsl */
+/* CSS relevant to Frankenstein_text.xsl */
 
 .marginAdd {
     display: none;
@@ -52,6 +52,10 @@ p {
 
 .deletions {
     color: rgb(147, 147, 147);
+}
+
+.chapter {
+    padding-left: 50px;
 }
 
 .pagenum {
@@ -344,4 +348,47 @@ th {
 td {
     padding-right: 10px;
     text-align: right;
+}
+
+/* Switch */
+
+#checkboxInput {
+  display: none;
+}
+
+.toggleSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition-duration: .2s;
+}
+
+.toggleSwitch::after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  left: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  transition-duration: .2s;
+  box-shadow: 5px 2px 10px rgba(129, 129, 129, 0.26);
+  border: 3px solid white;
+}
+
+#checkboxInput:checked+.toggleSwitch::after {
+  transform: translateX(100%);
+  transition-duration: .2s;
+  background-color: white;
+}
+
+#checkboxInput:checked+.toggleSwitch {
+  background-color: #a3847a;
+  transition-duration: .2s;
 }

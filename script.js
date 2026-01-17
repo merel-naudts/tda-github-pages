@@ -132,3 +132,17 @@ function documentLoader() {
   }
 // write another function that will toggle the display of the deletions by clicking on a button
 // EXTRA: write a function that will display the text as a reading text by clicking on a button or another dropdown list, meaning that all the deletions are removed and that the additions are shown inline (not in superscript)
+
+let labelElement = document.getElementById('checkboxInput');
+labelElement.addEventListener('click', displayDeletions);
+
+function displayDeletions() {
+  let deletions = document.getElementsByClassName('deletions');
+  let delArray = Array.from(deletions);
+  delArray.forEach((deletion) => {
+    if (deletion.style.visibility === "hidden") {
+      deletion.style.visibility = "visible";  
+    } else {
+      deletion.style.visibility = "hidden";  
+      }});
+}

@@ -59,7 +59,7 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    
+
     
     <xsl:template match="tei:del">
         <del>
@@ -85,6 +85,12 @@
     
     <!-- add additional templates below, for example to transform the tei:lb in <br/> empty elements, tei:hi[@rend = 'sup'] in <sup> elements, the underlined text, additions with the attribute "overwritten" etc. -->
 
+    <xsl:template match="tei:head">
+        <span class="chapter">
+            <xsl:apply-templates/>
+        </span><br/><br/>
+    </xsl:template>
+    
     <xsl:template match="tei:add">
         <i>
             <xsl:attribute name="class">
