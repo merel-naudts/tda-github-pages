@@ -65,6 +65,12 @@ p {
     border-radius: 50%;
 }
 
+.floatingText {
+    position: absolute;
+    top: 30px;
+    right: 8px;
+}
+
 header {
     height: 275px;
     background-image: url("img/Cole_Thomas_The_Course_of_Empire_The_Savage_State_1836.jpg");

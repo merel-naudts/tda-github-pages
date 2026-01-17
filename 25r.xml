@@ -34,6 +34,7 @@
 			<div type="page" n="25r" rend="recto">
 				<pb n="25r"/>
 				<metamark function="pagenumber"><num><hi rend="circled">83</hi></num></metamark>
+				<floatingText><body><p>25</p></body></floatingText>
 				<p>
 					believe that so great a good fortune<lb/>
 					could have befallen me; but when<lb/>
@@ -46,7 +47,7 @@
 					ly the servant brought breakfast:<lb/>
 					but I was unable to contain my-<lb/>
 					self. It was not joy only that possess-<lb/>
-					-ed me,–I felt my flesh tingle with<lb/>
+					-ed me,—I felt my flesh tingle with<lb/>
 					the excess of sensitiveness and my<lb/>
 					pulse beat rapidly. I was unable to<lb/>
 					remain for a single instant in<lb/>
@@ -54,8 +55,8 @@
 					the chairs, clapped my hand<add place="inline" hand="#MWS" rend="black ink">s</add> &amp; laughed<lb/>
 					aloud. Clerval at first attributed<lb/>
 					my unusual spirits to joy <del type="crossedOut" hand="#MWS" rend="black ink">at</del><add place="supralinear" hand="#MWS" rend="black ink">on</add> his<lb/>
-					arrival– but when <del type="crossedOut" hand="#MWS" rend="black ink">saw</del> he observed<lb/>
-					me <add place="supralinear" hand="#PBS" rend="black ink">more attentively</add><metamark>&#8248;</metamark><note>'^' is used as metamark</note> he saw a wildness in my eyes for<lb/>
+					arrival— but when <del type="crossedOut" hand="#MWS" rend="black ink">saw</del> he observed<lb/>
+					me <add place="supralinear" hand="#PBS" rend="black ink">more attentively</add><metamark>&#8248;</metamark><note>'^' is used as metamark to indicate where 'more attentively' should be inserted</note> he saw a wildness in my eyes for<lb/>
 					which he could not account and<lb/>
 					my loud unrestrained heartless laugh<lb/>
 					-ter frightened and astonished him.<lb/>
@@ -63,7 +64,7 @@
 				<p>
 					My dear Frankenstein," cried he "What<lb/>
 					for God's sake is the matter <del type="crossedOut" hand="#MWS" rend="black ink">for</del> do not<lb/>
-					laugh so – <del type="crossedOut" hand="#MWS" rend="black ink">What has</del> How ill you are!<lb/>
+					laugh so — <del type="crossedOut" hand="#MWS" rend="black ink">What has</del> How ill you are!<lb/>
 					What is the cause of all this?<lb/>
 				</p>
 				<p>

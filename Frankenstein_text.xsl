@@ -8,7 +8,7 @@
     <!-- <xsl:output method="xml" omit-xml-declaration="yes" indent="yes" /> -->
     <xsl:template match="tei:teiHeader"/>
 
-    <xsl:template match="tei:body">
+    <xsl:template match="tei:TEI/tei:text/tei:body">
         <div class="row">
         <div class="col-3"><br/><br/><br/><br/><br/>
             <xsl:for-each select="//tei:add[@place = 'marginleft']">
@@ -120,6 +120,12 @@
 
     <xsl:template match="tei:metamark[@function='pagenumber']/tei:num">
         <span class="pagenum">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+    <xsl:template match="tei:floatingText">
+        <span class="floatingText">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
