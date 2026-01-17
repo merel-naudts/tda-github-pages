@@ -34,16 +34,18 @@ p {
     margin-bottom: 100px;
 }
 
-.marginAdd {
-    display: none;
-}
-
 .mirador-canvas-nav {
     display: none !important;
 }
 
+/* Frankenstein_text.xsl */
+
+.marginAdd {
+    display: none;
+}
+
 .supraAdd {
-    vertical-align: 85%;
+    vertical-align: 90%;
     font-size: smaller;
     font-style: italic;
 }
@@ -52,14 +54,11 @@ p {
     color: rgb(147, 147, 147);
 }
 
-.metamark {
+.pagenum {
     position: absolute;
     top: 0px;
     right: 0px;
-}
-
-.pagenum {
-    padding: 5px 5px 5px 5px;
+    padding: 2px 5px 2px 5px;
     border-style: solid;
     border-width: 1.5px;
     border-radius: 50%;

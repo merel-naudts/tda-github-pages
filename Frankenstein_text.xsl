@@ -86,12 +86,13 @@
     <!-- add additional templates below, for example to transform the tei:lb in <br/> empty elements, tei:hi[@rend = 'sup'] in <sup> elements, the underlined text, additions with the attribute "overwritten" etc. -->
 
     <xsl:template match="tei:add">
-        <span>
+        <i>
             <xsl:attribute name="class">
+                <xsl:text>additions </xsl:text>
                 <xsl:value-of select="@hand"/>
             </xsl:attribute>
-            <i><xsl:apply-templates/></i>
-        </span>
+            <xsl:apply-templates/>
+        </i>
     </xsl:template>
 
     <xsl:template match="tei:lb">
@@ -111,12 +112,6 @@
     </xsl:template>
 
     <xsl:template match="tei:note"/>
-    
-    <xsl:template match="tei:metamark[@function='pagenumber']">  
-        <span class="metamark">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
 
     <xsl:template match="tei:metamark[@function='pagenumber']/tei:num">
         <span class="pagenum">
