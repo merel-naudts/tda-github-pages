@@ -133,19 +133,53 @@ function documentLoader() {
 // write another function that will toggle the display of the deletions by clicking on a button
 // EXTRA: write a function that will display the text as a reading text by clicking on a button or another dropdown list, meaning that all the deletions are removed and that the additions are shown inline (not in superscript)
 
-let labelElement1 = document.getElementById('hideDel');
-labelElement1.addEventListener('click', hideDeletions);
+// Function that displays the default text (showing all deletions and additions) by clicking on the first radio button
 
-function hideDeletions() {
+let labelElement1 = document.getElementById('showAll');
+labelElement1.addEventListener('click', showAll);
+
+function showAll() {
   let deletions = document.getElementsByClassName('deletions');
   let delArray = Array.from(deletions);
   delArray.forEach((deletion) => {
+    deletion.style.display = "inline";
+    deletion.style.visibility = "visible"; 
+  });
+  
+  let additions =  document.getElementsByClassName('additions');
+  let addArray = Array.from(additions);
+  addArray.forEach((addition) => {
+    addition.style.fontStyle = "italic";
+  });
+  
+  let supraAdditions =  document.getElementsByClassName('supraAdd');
+  let supraAddArray = Array.from(supraAdditions);
+  supraAddArray.forEach((supraAddition) => {
+    supraAddition.style.fontStyle = "italic";
+    supraAddition.style.verticalAlign = "90%";
+    supraAddition.style.fontSize = "smaller";
+  });
+}
+
+// Function that hides deletions by clicking on the second radio button
+
+let labelElement2 = document.getElementById('hideDel');
+labelElement2.addEventListener('click', hideDeletions);
+
+function hideDeletions() {
+  showAll();
+  let deletions = document.getElementsByClassName('deletions');
+  let delArray = Array.from(deletions);
+  delArray.forEach((deletion) => {
+    deletion.style.display = "inline";
     deletion.style.visibility = "hidden";  
     });
 }
 
-let labelElement2 = document.getElementById('readText');
-labelElement2.addEventListener('click', readingText);
+// Function that displays the text as reading text by clicking on the third radio button
+
+let labelElement3 = document.getElementById('readText');
+labelElement3.addEventListener('click', readingText);
 
 function readingText() {
   let deletions = document.getElementsByClassName('deletions');
@@ -156,85 +190,16 @@ function readingText() {
 
   let additions =  document.getElementsByClassName('additions');
   let addArray = Array.from(additions);
-
   addArray.forEach((addition) => {
     addition.style.fontStyle = "normal";
   });
 
   let supraAdditions =  document.getElementsByClassName('supraAdd');
-  let supraAddArray = Array.from(supraAdditions);
-
+  let supraAddArray = Array.from(supraAdditions); 
   supraAddArray.forEach((supraAddition) => {
     supraAddition.style.fontStyle = "normal";
     supraAddition.style.verticalAlign = "0%";
     supraAddition.style.fontSize = "initial";
-  });
-}
-
-let labelElement3 = document.getElementById('showAll');
-labelElement3.addEventListener('click', showAll);
-
-function showAll() {
-  let deletions = document.getElementsByClassName('deletions');
-  let delArray = Array.from(deletions);
-  
-  delArray.forEach((deletion) => {
-    deletion.style.display = "inline";
-    deletion.style.visibility = "visible"; 
-  });
-
-  let additions =  document.getElementsByClassName('additions');
-  let addArray = Array.from(additions);
-  
-  addArray.forEach((addition) => {
-    addition.style.fontStyle = "italic";
-  });
-
-  let supraAdditions =  document.getElementsByClassName('supraAdd');
-  let supraAddArray = Array.from(supraAdditions);
-  
-  supraAddArray.forEach((supraAddition) => {
-    supraAddition.style.fontStyle = "italic";
-    supraAddition.style.verticalAlign = "90%";
-    supraAddition.style.fontSize = "smaller";
-  });
-}
-
-function readingTextTry() {
-  let deletions = document.getElementsByClassName('deletions');
-  let delArray = Array.from(deletions);
-  delArray.forEach((deletion) => {
-    if (deletion.style.display === "none") {
-      deletion.style.display = "inline";
-    } else {
-      deletion.style.display = "none";
-    }
-  });
-
-  let additions =  document.getElementsByClassName('additions');
-  let addArray = Array.from(additions);
-
-  addArray.forEach((addition) => {
-    if (addition.style.fontStyle === "normal") {
-      addition.style.fontStyle = "italic";
-    } else {
-      addition.style.fontStyle = "normal";
-    }
-  });
-
-  let supraAdditions =  document.getElementsByClassName('supraAdd');
-  let supraAddArray = Array.from(supraAdditions);
-
-  supraAddArray.forEach((supraAddition) => {
-    if (supraAddition.style.fontStyle === "normal") {
-      supraAddition.style.fontStyle = "italic";
-      supraAddition.style.verticalAlign = "90%";
-      supraAddition.style.fontSize = "smaller";
-    } else {
-      supraAddition.style.fontStyle = "normal";
-      supraAddition.style.verticalAlign = "0%";
-      supraAddition.style.fontSize = "initial";
-    }
   });
 }
 

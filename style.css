@@ -350,45 +350,76 @@ td {
     text-align: right;
 }
 
-/* Switch */
+/* Row with functionalities: select hands, modifications, buttons for navigation */
 
-#checkboxInput {
-  display: none;
+.functionalities {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0px 15px;
+    margin-bottom: 15px;  
 }
 
-.toggleSwitch {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 50px;
-  height: 30px;
-  background-color: #ccc;
-  border-radius: 20px;
-  cursor: pointer;
-  transition-duration: .2s;
+.form-group {
+    flex: 2 1 0;
+    min-width: 180px;
+    padding: 0 1rem;
+    font-size: 16px;
+    font-family: "Vollkorn", serif;
+    color: #362715;
+    margin: 8px 0px;
 }
 
-.toggleSwitch::after {
-  content: "";
-  position: absolute;
-  height: 15px;
-  width: 15px;
-  left: 10px;
-  background-color: transparent;
-  border-radius: 50%;
-  transition-duration: .2s;
-  box-shadow: 5px 2px 10px rgba(129, 129, 129, 0.26);
-  border: 3px solid white;
+.p-mod {
+    margin-bottom: 3px;
+    color: #a3847a;
+    font-weight: bold;
 }
 
-#checkboxInput:checked+.toggleSwitch::after {
-  transform: translateX(100%);
-  transition-duration: .2s;
-  background-color: white;
+.radio-buttons {
+    flex: 2 1 0;
+    min-width: 220px;
+    padding: 0 1rem;
+    accent-color: #a3847a;
+    font-size: 16px;
+    font-family: "Vollkorn", serif;
+    color: #362715;
+    border-left: solid 1px #a3847a;
+    border-right: solid 1px #a3847a;
 }
 
-#checkboxInput:checked+.toggleSwitch {
-  background-color: #a3847a;
-  transition-duration: .2s;
+.radio-button {
+    margin-right: 5px;
+    margin-left: 0px;
 }
+
+.radio-button-label {
+    margin-right: 20px;
+}
+
+.page-buttons {
+    flex: 1 1 0;
+    min-width: 140px;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.page-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a3847a;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: none;
+    width: 35px;
+    height: 40px;
+}
+
+ .page-button:hover {
+    color: white;
+    text-decoration: none;
+ }
