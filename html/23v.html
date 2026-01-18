@@ -13,55 +13,93 @@
 
     <title>Frankenstein Edition</title>
     <link href="../style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Frankenstein</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <a class="nav-link" href="../index.html">Home</a>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Pages
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="21r.html">21r</a>
-              <a class="dropdown-item" href="21v.html">21v</a>
-              <a class="dropdown-item" href="22r.html">22r</a>
-              <a class="dropdown-item" href="22v.html">22v</a>
-              <a class="dropdown-item" href="23r.html">23r</a>
-              <a class="dropdown-item" href="23v.html">23v</a>
-              <a class="dropdown-item" href="24r.html">24r</a>
-              <a class="dropdown-item" href="24v.html">24v</a>
-              <a class="dropdown-item" href="25r.html">25r</a>
-              <a class="dropdown-item" href="25v.html">25v</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container-fluid">
-      <h1>Frankenstein Volume I Draft in Chapter Sequence</h1>
-      <span style="visibility:hidden" id='page'>49</span>
-      <h2 id='folio'>23v</h2> <!-- you can style this h2 element differently, but you should keep the id="folio" and the elements value *unchanged* -->
-      <div id="stats"></div>
-      <div class="form-group">
-        <select class="form-control" id="sel-hand" onChange="selectHand(event)">
-          <option value="both">Both Hands</option>
-          <option value="Mary">Mary Shelley's Hand Highlighted</option>
-          <option value="Percy">Percy Shelley's Hand Highlighted</option>
-        </select>
-      </div>
-      <div class="row">
-        <div class="col-5">   
-            <div id="my-mirador"></div>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li>
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="21r.html">21r</a>
+                <a class="dropdown-item" href="21v.html">21v</a>
+                <a class="dropdown-item" href="22r.html">22r</a>
+                <a class="dropdown-item" href="22v.html">22v</a>
+                <a class="dropdown-item" href="23r.html">23r</a>
+                <a class="dropdown-item" href="23v.html">23v</a>
+                <a class="dropdown-item" href="24r.html">24r</a>
+                <a class="dropdown-item" href="24v.html">24v</a>
+                <a class="dropdown-item" href="25r.html">25r</a>
+                <a class="dropdown-item" href="25v.html">25v</a>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="col-7" id="text"></div>
+      </nav>
+      <h1 class="header-page"><i>Frankenstein</i> Volume I Draft in Chapter Sequence</h1>
+      <h2 class="header-author" id="folio">23v</h2> <!-- you can style this h2 element differently, but you should keep the id="folio" and the elements value *unchanged* -->
+    </header>
+    <main>
+      <div class="container-fluid custom-container">
+        <div class="row">
+          <div class="col-12">
+            <span style="visibility:hidden" id='page'>49</span>
+            <div id="stats"></div>
+            <div class="row functionalities">
+              <div class="form-group">
+                <select class="form-control" id="sel-hand" onChange="selectHand(event)">
+                  <option value="both">Both Hands</option>
+                  <option value="Mary">Mary Shelley's Hand Highlighted</option>
+                  <option value="Percy">Percy Shelley's Hand Highlighted</option>
+                </select>
+              </div>
+              <div class="radio-buttons">
+                <p class="p-mod">Modifications</p>
+                <input type="radio" id="showAll" name="drone" class="radio-button" checked />
+                <label for="showAll" class="radio-button-label">Show all</label>
+                <input type="radio" id="hideDel" name="drone" class="radio-button" />
+                <label for="hideDel" class="radio-button-label">Hide deletions</label>
+                <input type="radio" id="readText" name="drone" class="radio-button" />
+                <label for="readText" class="radio-button-label">Reading text</label>
+              </div>
+              <div class="notes-toggle" onClick="showNotes(event)">
+                <p class="notes-toggle-text">Show notes: </p>
+                <input type="checkbox" id="checkboxInput">
+                <label for="checkboxInput" class="toggleSwitch"></label>
+              </div>
+              <div class="page-buttons">
+                <a class="page-button" href="21r.html" title="First page">&#9198;&#xFE0E;</a>
+                <a class="page-button" href="23r.html" title="Previous page">&#9204;</a>
+                <a class="page-button" href="24r.html" title="Next page">&#9205;</a>
+                <a class="page-button" href="25v.html" title="Last page">&#9197;&#xFE0E;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 mirador">
+              <div id="my-mirador"></div>
+          </div>
+          <div class="col-6 transcription" id="text"></div>
+        </div>
       </div>
-    </div>
+    </main>
+    <footer>
+      <p>
+        Content on this site is licenced under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" style="color: #a3847a;"">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</a> Licence.<br/>
+        © 2025 Merel Naudts
+      </p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
