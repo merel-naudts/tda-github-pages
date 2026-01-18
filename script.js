@@ -48,8 +48,8 @@ var mirador = Mirador.viewer({
 function documentLoader() {
 
     Promise.all([
-      fetch(folio_xml).then(response => response.text()),
-      fetch("Frankenstein_text.xsl").then(response => response.text())
+      fetch("../xml/" + folio_xml).then(response => response.text()),
+      fetch("../xslt/Frankenstein_text.xsl").then(response => response.text())
     ])
     .then(function ([xmlString, xslString]) {
       var parser = new DOMParser();
@@ -73,8 +73,8 @@ function documentLoader() {
   function statsLoader() {
 
     Promise.all([
-      fetch(folio_xml).then(response => response.text()),
-      fetch("Frankenstein_meta.xsl").then(response => response.text())
+      fetch("../xml/" + folio_xml).then(response => response.text()),
+      fetch("../xslt/Frankenstein_meta.xsl").then(response => response.text())
     ])
     .then(function ([xmlString, xslString]) {
       var parser = new DOMParser();
