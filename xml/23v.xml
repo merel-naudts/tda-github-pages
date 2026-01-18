@@ -3,31 +3,51 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title>Frankenstein</title>
-        <author corresp="#MWS">Mary Wollstonecraft Shelley</author>
-        <editor corresp="#PBS">Percy Bysshe Shelley</editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>University of Antwerp</publisher>
-        <date>8 December 2023</date>
-        <availability>
-          <licence target="https://iiif.bodleian.ox.ac.uk/iiif/mirador/53fd0f29-d482-46e1-aa9d-37829b49987d">
-            <p>Original text by Mary Shelley (1816). Public domain, under a CC-BY-NC 4.0 licence.</p>
-          </licence>
-        </availability>
-      </publicationStmt>
-      <sourceDesc>
-        <p>Draft of Frankenstein, [August or September] – [?December] 1816. | Bodleian MS. 
-          Abinger c.56 (formerly designated Dep. 477/1) consists of 62 leaves originally 
-          bound in Notebook A, one of two now disbound notebooks in which Mary W. Shelley 
-          (MWS) drafted the two-volume version of Frankenstein. The draft in c.56 runs 
-          from the beginning to the end of Volume I, concluding just as the Creature is 
-          about to begin his tale to Victor.</p>
-      </sourceDesc>
-    </fileDesc>
-  </teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Frankenstein</title>
+				<author xml:id="MWS"><name>Mary Wollstonecraft Shelley</name></author>
+				<editor xml:id="PBS"><name>Percy Bysshe Shelley</name></editor>
+				<principal xml:id="MN"><name>Merel Naudts</name></principal>
+				<respStmt>
+					<name>Merel Naudts</name>
+					<resp>Correction of transcriptions</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>University of Antwerp</publisher>
+				<date>19 January 2026</date>
+				<availability>
+					<licence target="https://iiif.bodleian.ox.ac.uk/iiif/mirador/53fd0f29-d482-46e1-aa9d-37829b49987d">
+						<p>Original text by Mary Shelley (1816). Public domain, under a CC-BY-NC 4.0 licence.</p>
+					</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<settlement>Oxford</settlement>
+						<institution>University of Oxford</institution>
+						<repository>Bodleian Library</repository>
+						<idno>MS. Abinger c. 56</idno>
+					</msIdentifier>
+					<msContents>
+						<summary>Draft of Frankenstein</summary>
+						<msItem>
+							<locus>23v</locus>
+						</msItem>
+					</msContents>
+					<history>
+						<origin>
+							<p>
+								Written during <origDate>[August or September]-[?December] 1816</origDate>
+							</p>
+						</origin>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
   <text>
     <body>
       <div type="page" n="23v" rend="verso">
