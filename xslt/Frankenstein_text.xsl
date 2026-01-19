@@ -131,4 +131,16 @@
         </span>
     </xsl:template>
 
+    <xsl:template match="tei:metamark">
+        <span class="metamark">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
+    <xsl:template match="tei:note">
+        <span class="note">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
 </xsl:stylesheet>
