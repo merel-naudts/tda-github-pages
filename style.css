@@ -15,6 +15,8 @@ p {
     text-indent: 25px;
 }
 
+/* CSS relevant to the lay-out of the 10 HTML pages */
+
 .custom-container {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -89,6 +91,46 @@ p {
     border-bottom: 1px solid;
 }
 
+/* CSS relevant to Frankenstein_meta.xsl */
+
+.page-header {
+    font-family: "Vollkorn", serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #362715;
+    margin: 3% 0 2% 0;
+}
+
+.list {
+    font-size: 16px;
+    font-family: "Vollkorn", serif;
+    color: #362715;
+}
+
+table, th, td {
+    border: solid;
+    border-width: 1px;
+    border-color: #c9c4b4;
+    font-size: 16px;
+    font-family: "Vollkorn", serif;
+    color: #362715;
+}
+
+th {
+    font-weight: 400;
+    padding-left: 40px;
+    padding-right: 10px;
+    text-align: right;
+    background-color: hwb(16 48% 36% / 0.248);
+}
+
+td {
+    padding-right: 10px;
+    text-align: right;
+}
+
+/* CSS relevant to HTML header */
+
 header {
     height: 275px;
     background-image: url("img/Cole_Thomas_The_Course_of_Empire_The_Savage_State_1836.jpg");
@@ -152,6 +194,8 @@ header {
     font-family: "Vollkorn", serif;
     color: #362715;
 }
+
+/* CSS relevant to index.html */
 
 .desc {
     width: 100%;
@@ -310,12 +354,15 @@ header {
     margin-bottom: 0;
     font-family: "Vollkorn", serif;
     text-align: center;
+    text-indent: 0px;
 }
 
 .page:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     cursor: pointer;
 }
+
+/* CSS relevant to HTML footer */
 
 footer {
     height: 100px;
@@ -329,43 +376,7 @@ footer p {
     padding: 25px 0 25px 0
 }
 
-.page-header {
-    font-family: "Vollkorn", serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #362715;
-    margin: 3% 0 2% 0;
-}
-
-.list {
-    font-size: 16px;
-    font-family: "Vollkorn", serif;
-    color: #362715;
-}
-
-table, th, td {
-    border: solid;
-    border-width: 1px;
-    border-color: #c9c4b4;
-    font-size: 16px;
-    font-family: "Vollkorn", serif;
-    color: #362715;
-}
-
-th {
-    font-weight: 400;
-    padding-left: 40px;
-    padding-right: 10px;
-    text-align: right;
-    background-color: hwb(16 48% 36% / 0.248);
-}
-
-td {
-    padding-right: 10px;
-    text-align: right;
-}
-
-/* Row with functionalities: select hands, modifications, buttons for navigation */
+/* CSS relevant to functionalities */
 
 .functionalities {
     display: flex;
@@ -374,6 +385,8 @@ td {
     padding: 0px 15px;
     margin-bottom: 15px;  
 }
+
+/* CSS relevant to functionalities: select hands */
 
 .form-group {
     flex: 2 1 0;
@@ -384,6 +397,8 @@ td {
     color: #362715;
     margin: 8px 0px;
 }
+
+/* CSS relevant to functionalities: modifications */
 
 .p-mod {
     margin-bottom: 3px;
@@ -412,34 +427,7 @@ td {
     margin-right: 20px;
 }
 
-.page-buttons {
-    flex: 1 1 0;
-    min-width: 120px;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.25rem;
-}
-
-.page-button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #a3847a;
-    color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border: none;
-    width: 35px;
-    height: 40px;
-}
-
- .page-button:hover {
-    color: white;
-    text-decoration: none;
- }
-
- /* Switch */
+/* CSS relevant to functionalities: toggle to display notes */
 
 .notes-toggle {
     flex: 1 1 0;
@@ -531,3 +519,32 @@ body.show-notes .unclear:hover + .note {
   background-color: white;
   padding: 5px 5px;
 }
+
+/* CSS relevant to functionalities: buttons for navigation */
+
+.page-buttons {
+    flex: 1 1 0;
+    min-width: 120px;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.page-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a3847a;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: none;
+    width: 35px;
+    height: 40px;
+}
+
+ .page-button:hover {
+    color: white;
+    text-decoration: none;
+ }
