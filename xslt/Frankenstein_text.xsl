@@ -136,6 +136,12 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>
+
+    <xsl:template match="tei:unclear">
+        <span class="unclear">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
     
     <xsl:template match="tei:note">
         <span class="note">

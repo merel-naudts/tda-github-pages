@@ -242,12 +242,7 @@ function readingText() {
 
 // Function that displays notes by clicking on the toggle button
 
-function showNotes(event) {
-  let metamarks = document.getElementsByClassName('metamark');
-  let metamarksArray = Array.from(metamarks);
-  metamarksArray.forEach((metamark) => {
-    metamark.style.border = "1px solid #a3847a";
-    metamark.style.backgroundColor = "#a3847a36";
-  });
+function showNotes() {
+  document.body.classList.toggle("show-notes");
 }
 

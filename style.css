@@ -491,7 +491,27 @@ td {
   display: none;
 }
 
-.metamark:hover + .note {
-  display: block;
+body.show-notes .metamark,
+body.show-notes .unclear {
+  border: 1px solid #a3847a;
+  background-color: #a3847a36;
+}
+
+body.show-notes .metamark:has(.pagenum) {
+  border: none;
+  background-color: transparent;
+}
+
+body.show-notes .metamark:hover + .note,
+body.show-notes .unclear:hover + .note {
+  display: inline;
   color: #a3847a;
+  font-size: 14px;
+  position: absolute;
+  left: -11em;
+  width: 150px;
+  text-indent: 0px;
+  border: 1px solid #a3847a;
+  background-color: white;
+  padding: 5px 5px;
 }
