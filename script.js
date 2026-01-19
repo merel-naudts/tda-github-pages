@@ -107,10 +107,10 @@ function documentLoader() {
     if (event.target.value == 'both') {
     //write an forEach() method that shows all the text written and modified by both hand (in black?). The forEach() method of Array instances executes a provided function once for each array element.
       MaryArray.forEach((item) => {
-        item.style.color = 'black';
+        item.style.color = '';
       });
       PercyArray.forEach((item) => {
-        item.style.color = 'black';
+        item.style.color = '';
       });
     } else if (event.target.value == 'Mary') {
     //write an forEach() method that shows all the text written and modified by Mary in a different color (or highlight it) and the text by Percy in black. 
@@ -139,7 +139,7 @@ let labelElement1 = document.getElementById('showAll');
 labelElement1.addEventListener('click', showAll);
 
 function showAll() {
-  let deletions = document.getElementsByClassName('deletions');
+  let deletions = document.getElementsByTagName('del');
   let delArray = Array.from(deletions);
   delArray.forEach((deletion) => {
     deletion.style.display = "inline";
@@ -159,6 +159,24 @@ function showAll() {
     supraAddition.style.verticalAlign = "90%";
     supraAddition.style.fontSize = "smaller";
   });
+
+  let marginAdditions = document.getElementsByClassName('marginAdd');
+  let marginAddArray = Array.from(marginAdditions);
+  marginAddArray.forEach((marginAddition) => {
+    marginAddition.style.display = "none";
+  });
+
+  let marginLeft = document.getElementsByClassName('marginLeft');
+  let marginLeftArray = Array.from(marginLeft);
+  marginLeftArray.forEach((marginLeft) => {
+    marginLeft.style.display = "inline";
+  });
+
+  let metamarks = document.getElementsByClassName('metamark');
+  let metamarkArray = Array.from(metamarks);
+  metamarkArray.forEach((metamark) => {
+    metamark.style.display = "inline";
+  });
 }
 
 // Function that hides deletions by clicking on the second radio button
@@ -168,7 +186,7 @@ labelElement2.addEventListener('click', hideDeletions);
 
 function hideDeletions() {
   showAll();
-  let deletions = document.getElementsByClassName('deletions');
+  let deletions = document.getElementsByTagName('del');
   let delArray = Array.from(deletions);
   delArray.forEach((deletion) => {
     deletion.style.display = "inline";
@@ -182,7 +200,7 @@ let labelElement3 = document.getElementById('readText');
 labelElement3.addEventListener('click', readingText);
 
 function readingText() {
-  let deletions = document.getElementsByClassName('deletions');
+  let deletions = document.getElementsByTagName('del');
   let delArray = Array.from(deletions);
   delArray.forEach((deletion) => {
     deletion.style.display = "none";
@@ -201,6 +219,25 @@ function readingText() {
     supraAddition.style.verticalAlign = "0%";
     supraAddition.style.fontSize = "initial";
   });
+
+  let marginAdditions = document.getElementsByClassName('marginAdd');
+  let marginAddArray = Array.from(marginAdditions);
+  marginAddArray.forEach((marginAddition) => {
+    marginAddition.style.display = "inline";
+  });
+
+  let marginLeft = document.getElementsByClassName('marginLeft');
+  let marginLeftArray = Array.from(marginLeft);
+  marginLeftArray.forEach((marginLeft) => {
+    marginLeft.style.display = "none";
+  });
+
+  let metamarks = document.getElementsByClassName('metamark');
+  let metamarkArray = Array.from(metamarks);
+  metamarkArray.forEach(metamark => {
+  if (!metamark.querySelector('.pagenum')) {
+    metamark.style.display = "none";
+  }});
 }
 
 // Function that displays notes by clicking on the toggle button
