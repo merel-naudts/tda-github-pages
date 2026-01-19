@@ -50,12 +50,6 @@ p {
     font-style: italic;
 }
 
-.infraAdd {
-    vertical-align: -90%;
-    font-size: smaller;
-    font-style: italic;
-}
-
 .deletions {
     color: rgb(147, 147, 147);
 }
@@ -78,15 +72,6 @@ p {
     position: absolute;
     top: 30px;
     right: 8px;
-}
-
-.indent {
-    padding-left: 25px;
-}
-
-.boxed {
-    border-left: 1px solid;
-    border-bottom: 1px solid;
 }
 
 header {
@@ -522,7 +507,6 @@ body.show-notes .unclear:hover + .note {
   display: inline;
   color: #a3847a;
   font-size: 14px;
-  font-style: normal;
   position: absolute;
   left: -11em;
   width: 150px;

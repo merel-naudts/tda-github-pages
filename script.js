@@ -238,14 +238,6 @@ function readingText() {
   if (!metamark.querySelector('.pagenum')) {
     metamark.style.display = "none";
   }});
-
-  let infraAdditions =  document.getElementsByClassName('infraAdd');
-  let infraAddArray = Array.from(infraAdditions); 
-  infraAddArray.forEach((infraAddition) => {
-    infraAddition.style.fontStyle = "normal";
-    infraAddition.style.verticalAlign = "0%";
-    infraAddition.style.fontSize = "initial";
-  });
 }
 
 // Function that displays notes by clicking on the toggle button
