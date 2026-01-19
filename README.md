@@ -1,0 +1,1 @@
+Welcome to the mini **digital edition** of Mary W. Shelley's *Frankenstein; or, The Modern Prometheus* (1818), made by **Merel Naudts** as a project for Text as Data II, taught at the University of Antwerp.

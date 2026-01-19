@@ -43,7 +43,6 @@ var mirador = Mirador.viewer({
   ]
 });
 
-
 // function to transform the text encoded in TEI with the xsl stylesheet "Frankenstein_text.xsl", this will apply the templates and output the text in the html <div id="text">
 function documentLoader() {
 
@@ -176,6 +175,14 @@ function showAll() {
   let metamarkArray = Array.from(metamarks);
   metamarkArray.forEach((metamark) => {
     metamark.style.display = "inline";
+  });
+
+  let infraAdditions =  document.getElementsByClassName('infraAdd');
+  let infraAddArray = Array.from(infraAdditions); 
+  infraAddArray.forEach((infraAddition) => {
+    infraAddition.style.fontStyle = "italic";
+    infraAddition.style.verticalAlign = "-90%";
+    infraAddition.style.fontSize = "smaller";
   });
 }
 
