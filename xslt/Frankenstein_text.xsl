@@ -101,6 +101,16 @@
         </i>
     </xsl:template>
 
+    <xsl:template match="tei:add[@place = 'infralinear']">
+        <span>
+            <xsl:attribute name="class">
+                <xsl:text>infraAdd </xsl:text>
+                <xsl:value-of select="@hand"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
     <xsl:template match="tei:lb">
         <br/>
     </xsl:template>
@@ -116,6 +126,18 @@
             <xsl:apply-templates/>
         </u>
     </xsl:template>
+
+    <xsl:template match="tei:hi[@rend='indented']">
+        <span class="indent">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+    <xsl:template match="tei:hi[@rend='boxed']">
+        <span class="boxed">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>      
 
     <xsl:template match="tei:note"/>
 
